@@ -29,7 +29,7 @@ def handle_new_message(message):
     for user in users:
         if users[user] == request.sid:
             username = user
-    emit("chat", {"message": message, "username": username}, broadcast=True)
+    emit("chat", {"message": message, "username": username }, broadcast=True)
 
 def create_app():
     app = Flask(__name__)
