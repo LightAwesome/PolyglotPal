@@ -40,6 +40,50 @@ body {
     outline: none;
     box-shadow: 0 0 0 2px #00a8ff, inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.language-selector {
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.language-selector label {
+    display: block; /* Stack the label above the select */
+    margin-bottom: 5px; /* Space between label and select */
+    color: #ecf0f1; /* Match the text color */
+    font-weight: bold; /* Make the label stand out */
+}
+
+#language {
+    width: 100%; /* Full width */
+    padding: 12px; /* Add padding for better touch targets */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Match the styling */
+    background: #2f3640; /* Match the chat input background */
+    color: #ecf0f1; /* Text color */
+    font-size: 16px; /* Font size */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Add some shadow */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Style for options in the dropdown */
+#language option {
+    background: #2f3640; /* Match background */
+    color: #ecf0f1; /* Text color */
+    padding: 12px; /* Padding for options */
+}
+
+/* Hover effect for options */
+#language:hover {
+    background: #34495e; /* Slightly lighter on hover */
+}
+
+/* Focus state for dropdown */
+#language:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 2px #00a8ff, inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Focus style */
+}
+
+
+
 ul {
     display: flex; /* Change to flex for vertical stacking */
     flex-direction: column; /* Stack items vertically */
